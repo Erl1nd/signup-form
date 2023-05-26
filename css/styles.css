@@ -28,7 +28,22 @@ body {
     background-image: url("../images/bg-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: white;
 }
 
 /* form */

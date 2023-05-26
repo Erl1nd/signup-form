@@ -16,25 +16,32 @@
 <body>
     <div class="container">
         <div class="img-container">
-            <div class="signup-img"></div>
+            <div class="signup-img">
+                <div class="logo-container">
+                    <img src="./images/odin-logo.svg" alt="">
+                </div>
+            </div>
         </div>
 
         <div class="form-section">
             <div class="form-container">
                 <h1>Welcome to Odin Project</h1>
                 <p>Register now to access all courses!</p>
-                <form action="post">
+                <form action="#" method="get">
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name">
+                    <input type="text" id="name" placeholder="Enter your name" minlength="2" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email">
+                    <input type="email" id="email" placeholder="Enter your email" minlength="2" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="phone" id="phone" placeholder="Enter your Phone Number" required>
 
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter Password">
+                    <input type="password" id="password" placeholder="Enter Password" minlength="8" required>
                     
-                    <label for="confirm">Confirm Passwrd</label>
-                    <input type="password" id="confirm" placeholder="Confirm Password">
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" id="confirm" placeholder="Confirm Password" minlength="8" required>
                     <button type="submit" id="submit-btn">Create an Account</button>
                 </form>
                 <p>Already have an account? <span class="login-btn"><a href="">Login</a></span></p>
